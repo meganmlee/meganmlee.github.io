@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><Megan Lee></title>
+    <title>Megan Lee | Robotics Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <div class="container">
         <header class="sidebar">
-            <img src="profile.jpg" alt="Your Name" class="profile-pic">
-            <h1>Your Name</h1>
-            <p>Robotics Researcher / Engineer</p>
+            <img src="profile.jpg" alt="Megan Lee" class="profile-pic">
+            <h1>Megan Lee</h1>
+            <p class="status">MS in Robotic Systems Development<br><strong>Carnegie Mellon University</strong><br>Robotics Institute</p>
+            
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="resume.pdf">CV/Resume</a></li>
-                    <li><a href="mailto:email@example.com">Email</a></li>
+                    <li><a href="resume.pdf">CV / Resume</a></li>
+                    <li><a href="mailto:email@example.com"><i class="fas fa-envelope"></i> Email</a></li>
+                    <li><a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
                 </ul>
             </nav>
         </header>
@@ -26,21 +29,40 @@
         <main class="content">
             <section id="about">
                 <h2>About Me</h2>
-                <p>I am a robotics enthusiast focusing on [Control Systems/ML/Mechanical Design]. Currently, I am working on [Current Project].</p>
+                <p>I am a robotics researcher focused on deep learning, generative models, and reinforcement learning. My work often involves humanoid robots, manipulation, and navigation within simulated environments like Habitat.</p>
+                <p>Currently, I am exploring EEG-based Brain-Computer Interfaces (BCI) and developing SCALE-Net, a CNN-LSTM architecture for neural data processing.</p>
             </section>
 
             <section id="projects">
                 <h2>Projects</h2>
                 
                 <div class="project-card">
-                    <h3>Autonomous Quadruped Control</h3>
-                    <p>Developed a locomotion controller using Model Predictive Control (MPC) for stable walking on uneven terrain.</p>
-                    <div class="links">
-                        <a href="#">[Code]</a> <a href="#">[Video]</a> <a href="#">[Paper]</a>
+                    <div class="project-media">
+                        <img src="project1-thumb.jpg" alt="SCALE-Net Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>SCALE-Net: EEG-based BCI</h3>
+                        <p>Developing a deep learning framework using CNNs and LSTMs to process spectral and temporal neural data for machine learning applications.</p>
+                        <div class="links">
+                            <a href="#">[Code]</a> <a href="#">[Paper]</a> <a href="#">[Website]</a>
+                        </div>
                     </div>
                 </div>
 
-                </section>
+                <div class="project-card">
+                    <div class="project-media">
+                        <img src="habitat-nav.jpg" alt="Habitat Navigation">
+                    </div>
+                    <div class="project-info">
+                        <h3>VLM-Guided Navigation</h3>
+                        <p>Implemented vision-language model (VLM) guided navigation in Habitat-Lab, focusing on zero-shot object goal navigation.</p>
+                        <div class="links">
+                            <a href="#">[Code]</a> <a href="#">[Video]</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
         </main>
     </div>
 

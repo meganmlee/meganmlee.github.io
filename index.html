@@ -3,67 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Megan Lee | Robotics Portfolio</title>
+    <title>Megan Lee</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <div class="container">
-        <header class="sidebar">
-            <img src="profile.jpg" alt="Megan Lee" class="profile-pic">
-            <h1>Megan Lee</h1>
-            <p class="status">MS in Robotic Systems Development<br><strong>Carnegie Mellon University</strong><br>Robotics Institute</p>
+        <table class="header-table">
+            <tr>
+                <td class="header-text">
+                    <h1>Megan Lee</h1>
+                    <p>I am a Master of Robotic Systems Development student at the <strong>Carnegie Mellon University Robotics Institute</strong>. My research focuses on deep learning, generative models, and reinforcement learning, with specific applications in humanoid manipulation and EEG-based BCI.</p>
+                    <p class="social-links">
+                        <a href="mailto:email@example.com">Email</a> / 
+                        <a href="https://linkedin.com/in/megan-minju">LinkedIn</a> / 
+                        <a href="resume.pdf">CV</a> / 
+                        <a href="https://github.com/meganmlee">GitHub</a>
+                    </p>
+                </td>
+                <td class="header-photo">
+                    <img src="profile.jpg" alt="Megan Lee" class="profile-pic">
+                </td>
+            </tr>
+        </table>
+
+        <section id="projects">
+            <h2>Publications & Projects</h2>
             
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="resume.pdf">CV / Resume</a></li>
-                    <li><a href="mailto:minjul0501@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
-                    <li><a href="https://linkedin.com/in/megan-minju/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main class="content">
-            <section id="about">
-                <h2>About Me</h2>
-                <p>I am a robotics researcher focused on deep learning, generative models, and reinforcement learning. My work often involves humanoid robots, manipulation, and navigation within simulated environments like Habitat.</p>
-                <p>Currently, I am exploring EEG-based Brain-Computer Interfaces (BCI) and developing SCALE-Net, a CNN-LSTM architecture for neural data processing.</p>
-            </section>
-
-            <section id="projects">
-                <h2>Projects</h2>
-                
-                <div class="project-card">
-                    <div class="project-media">
-                        <img src="project1-thumb.jpg" alt="SCALE-Net Project">
-                    </div>
-                    <div class="project-info">
-                        <h3>SCALE-Net: EEG-based BCI</h3>
-                        <p>Developing a deep learning framework using CNNs and LSTMs to process spectral and temporal neural data for machine learning applications.</p>
+            <table class="project-card">
+                <tr>
+                    <td class="project-media">
+                        <video src="navigation-demo.mp4" autoplay muted loop playsinline></video>
+                    </td>
+                    <td class="project-info">
+                        <h3>SCALE-Net: EEG-based BCI with CNN-LSTMs</h3>
+                        <p>Megan Lee, Charlie [Lastname]</p>
+                        <p class="venue">ICML, 2026 (In Prep)</p>
+                        <p class="description">Developing a framework for neural data processing that utilizes SE blocks and spectral-temporal processing for enhanced BCI performance.</p>
                         <div class="links">
                             <a href="#">[Code]</a> <a href="#">[Paper]</a> <a href="#">[Website]</a>
                         </div>
-                    </div>
-                </div>
+                    </td>
+                </tr>
+            </table>
 
-                <div class="project-card">
-                    <div class="project-media">
+            <table class="project-card">
+                <tr>
+                    <td class="project-media">
                         <img src="habitat-nav.jpg" alt="Habitat Navigation">
-                    </div>
-                    <div class="project-info">
-                        <h3>VLM-Guided Navigation</h3>
-                        <p>Implemented vision-language model (VLM) guided navigation in Habitat-Lab, focusing on zero-shot object goal navigation.</p>
+                    </td>
+                    <td class="project-info">
+                        <h3>VLM-Guided Navigation in Habitat</h3>
+                        <p>Megan Lee</p>
+                        <p class="venue">CMU Robotics Institute Tech Report</p>
+                        <p class="description">Implementing zero-shot object goal navigation using Vision-Language Models and PPO within simulated environments.</p>
                         <div class="links">
                             <a href="#">[Code]</a> <a href="#">[Video]</a>
                         </div>
-                    </div>
-                </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
 
-            </section>
-        </main>
+        <footer>
+            <p>Template adapted from <a href="https://jonbarron.info/">Jon Barron</a>.</p>
+        </footer>
     </div>
 
 </body>
